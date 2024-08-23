@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp phone</title>
+    <link rel="stylesheet" href="whatsapp.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="header">
+            <div class="app-name">WhatsApp</div>
+            <div class="icons">
+                <img src="search-regular-24.png" alt="Buscar" class="icon">
+                <img src="dots-vertical-rounded-regular-24.png" alt="Menú" class="icon">
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="tab active" id="chats-tab" onclick="showSection('chats')">CHATS</div>
+            <div class="tab" id="status-tab" onclick="showSection('status')">ESTADOS</div>
+            <div class="tab" id="calls-tab" onclick="showSection('calls')">LLAMADAS</div>
+        </div>
+        
+        <!-- Sección de Chats -->
+        <div class="content" id="chats">
+            <div class="chat">
+                <div class="profile-pic" style="background-image: url('salidita.png');"></div>
+                <div class="chat-info">
+                    <div class="name">salidita</div>
+                    <div class="message">yerinson: </span> vamos a jatar</div>
+                </div>
+                <div class="time">9:48 p.m.</div>
+            </div>
+            <div class="chat unread">
+                <div class="profile-pic" style="background-image: url('jeferson.jpg');"></div>
+                <div class="chat-info">
+                    <div class="name">jeferson</div>
+                    <div class="message">conteste ese garro loka</div>
+                </div>
+                <div class="time">5:45 p.m.</div>
+                <div class="unread-count">2</div>
+            </div>
+            <div class="chat">
+                <div class="profile-pic" style="background-image: url('yerinson.png');"></div>
+                <div class="chat-info">
+                    <div class="name">yerinson</div>
+                    <div class="message">vamos a jugar cod o que</div>
+                </div>
+                <div class="time">5:15 p.m.</div>
+            </div>
+            <div class="chat unread">
+                <div class="profile-pic" style="background-image: url('jhovany.jpg');"></div>
+                <div class="chat-info">
+                    <div class="name">jhovany</div>
+                    <div class="message">loka vamos a salir</div>
+                </div>
+                <div class="time">5:00 p.m.</div>
+                <div class="unread-count">1</div>
+            </div>
+            <div class="chat">
+                <div class="profile-pic" style="background-image: url('dylan.jpg');"></div>
+                <div class="chat-info">
+                    <div class="name">dylan</div>
+                    <div class="message">hola bro </div>
+                </div>
+                <div class="time">4:58 p.m. <p class="m"></p></div>
+            </div>
+            <div class="chat">
+                <div class="profile-pic" style="background-image: url('brayan.jpg');"></div>
+                <div class="chat-info">
+                    <div class="name">brayan</div>
+                    <div class="message">loka vaca donde anda ñro </div>
+                </div>
+                <div class="time">4:50 p.m.</div>
+            </div>
+            <div class="chat">
+                <div class="profile-pic" style="background-image: url('rojito.jpg');"></div>
+                <div class="chat-info">
+                    <div class="name">rojito</div>
+                    <div class="message">ñro vamos air al gym hoy? </div>
+                </div>
+                <div class="time">3:30 p.m.</div>
+            </div>
+        </div>
+
+        <!-- Sección de Estados -->
+        <div class="content hidden" id="status">
+            <div class="status">
+                <div class="profile-pic" style="background-image: url('edwar.png');"></div>
+                <div class="status-info">
+                    <div class="name">Mi estado</div>
+                    <div class="time">Toca para actualizar tu estado</div>
+                </div>
+                <div class="add-icon">+</div>
+            </div>
+            <div class="status">
+                <div class="profile-pic" style="background-image: url('yerinson.png');"></div>
+                <div class="status-info">
+                    <div class="name">yerinson</div>
+                    <div class="message">Hace 10 minutos</div>
+                </div>
+            </div>
+            <div class="status">
+                <div class="profile-pic" style="background-image: url('rojito.jpg');"></div>
+                <div class="status-info">
+                    <div class="name">rojito</div>
+                    <div class="message">Hace 30 minutos</div>
+                </div>
+            </div>
+            <div class="status">
+                <div class="profile-pic" style="background-image: url('jeferson.jpg');"></div>
+                <div class="status-info">
+                    <div class="name">jeferson</div>
+                    <div class="message">Hace 1 hora</div>
+                </div>
+            </div>
+            <div class="status">
+                <div class="profile-pic" style="background-image: url('dylan.jpg');"></div>
+                <div class="status-info">
+                    <div class="name">dylan</div>
+                    <div class="message">Hace 5 horas</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Llamadas -->
+        <div class="content hidden" id="calls">
+            <div class="call">
+                <div class="profile-pic" style="background-image: url('jeferson.jpg');"></div>
+                <div class="call-info">
+                    <div class="name">jeferson</div>
+                    <div class="call-type">hoy, 5:25 p.m.</div>
+                </div>
+                <div class="call-icons">
+                    <img src="phone-solid-24.png" alt="Call" class="icon">
+                </div>
+            </div>
+            <div class="call">
+                <div class="profile-pic" style="background-image: url('yerinson.png');"></div>
+                <div class="call-info">
+                    <div class="name">yerinson</div>
+                    <div class="call-type">19 de agosto, 11:53 a.m.</div>
+                </div>
+                <div class="call-icons">
+                    <img src="phone-solid-24.png" alt="Call" class="icon">
+                </div>
+            </div>
+            <div class="call">
+                <div class="profile-pic" style="background-image: url('rojito.jpg');"></div>
+                <div class="call-info">
+                    <div class="name">rojito</div>
+                    <div class="call-type">18 de agosto, 11:38 a.m.</div>
+                </div>
+                <div class="call-icons">
+                    <img src="phone-solid-24.png" alt="Call" class="icon">
+                </div>
+            </div>
+            <div class="call">
+                <div class="profile-pic" style="background-image: url('jhovany.jpg');"></div>
+                <div class="call-info">
+                    <div class="name">jhovany</div>
+                    <div class="call-type">15 de agosto, 1:50 p.m.</div>
+                </div>
+                <div class="call-icons">
+                    <img src="phone-solid-24.png" alt="Call" class="icon">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            
+            document.getElementById('chats').classList.add('hidden');
+            document.getElementById('status').classList.add('hidden');
+            document.getElementById('calls').classList.add('hidden');
+
+            
+            document.getElementById(section).classList.remove('hidden');
+
+            
+            document.getElementById('chats-tab').classList.remove('active');
+            document.getElementById('status-tab').classList.remove('active');
+            document.getElementById('calls-tab').classList.remove('active');
+
+            
+            document.getElementById(section + '-tab').classList.add('active');
+        }
+    </script>
+</body>
+</html>
